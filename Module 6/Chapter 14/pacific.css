@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box; 
+}
+body {
+    background-color: #90C7E3;
+    color: #666666;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+}
+dt {
+    color: #002171;
+    font-weight: bold;
+}
+footer {
+    font-size: 0.7em;
+    font-style: italic;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 1em;
+}
+form { 
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em; 
+    width: 80%; 
+}
+header {
+    background-color: #002171;
+    color: #FFFFFF;
+    font-family: Georgia, serif;
+    padding: 1em;
+}
+header a {
+    text-decoration: none;
+}
+header a:link{
+    color: #FFFFFF;
+}
+header a:visited {
+    color: #FFFFFF;
+}
+header a:hover {
+    color: #90C7E3;
+}
+input {
+    margin-bottom: 0.5em;
+}
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+h2 {
+    color: #1976D2;
+    font-family: Georgia, serif;
+}
+h3 {
+    font-family: Georgia, serif;
+}
+main {
+    padding-bottom: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+}
+nav {
+    background-color: #FFFFFF;
+    font-size: 1.2em;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+}
+nav a:link {
+    color: #5C7FA3;
+}
+nav a:visited {
+    color: #344873
+}
+nav a:hover {
+    color: #A52A2A;
+}
+nav li {
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+section {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+table {
+    border: 1px solid #3399CC;
+    border-collapse: collapse;
+    margin: auto;
+    width: 90%;
+}
+table td {
+    border: 1px solid #3399CC;
+    text-align: center;
+    padding: 5px;
+}
+table th {
+    border: 1px solid #3399CC;
+    padding: 5px;
+}
+table tr:nth-of-type(even) {
+    background-color: #DFEDF8;
+}
+textarea {
+    margin-bottom: 0.5em;
+}
+.redAsterisk {
+    color: #FF0000;
+}
+.resort {
+    color: #1976D2;
+    font-size: 1.2em;
+}
+.text {
+    text-align: left;
+}
+#homehero {
+    background-image: url(images/coast.jpg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+#yurthero {
+    background-image: url(images/yurt.jpg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+#trailhero {
+    background-image: url(images/trail.jpg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+#reshero {
+    background-image: url(images/ocean.jpg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+#desktop {
+    display: none;
+}
+#mobile {
+    display: inline;
+}
+#wrapper {
+    background-color: #FFFFFF;
+    /*
+    min-width: 960px;
+    max-width: 2048px;
+    */
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    */
+}
+@media (width >= 600px) {
+    form {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 10em 1fr;
+        gap: 1em;
+    }
+    h1 {
+        font-size: 2em;
+        letter-spacing: 0.25em;
+    }
+    input[type=submit] {
+        grid-column: 2/3;
+        width: 9em;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding-right: 2em;
+    }
+    nav li {
+        width: 12em;
+        border-bottom: none;
+    }
+    section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #flow {
+        display: flex;
+        flex-direction: row;
+    }
+    #mobile {
+        display: none;
+    }
+    #desktop {
+        display: inline;
+    }
+    #homehero, #yurthero, #trailhero, #reshero {
+        background-size: 100% 100%;
+    }
+}
+@media (width >= 1024px) {
+    body {
+        background-image: linear-gradient(to bottom, #FFFFFF 20%, #90C7E3 60%, #FFFFFF 100%);
+        background-repeat: no-repeat;
+    }
+    nav ul {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #wrapper {
+        margin: auto;
+        width: 80%;
+    }
+}
