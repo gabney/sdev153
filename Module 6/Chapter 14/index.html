@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale = 1">
         <title>Pacific Trails Resort</title>
         <link rel="stylesheet" href="pacific.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
         <header>
@@ -47,6 +48,13 @@
         <footer>
             Copyright &copy; 2020 Pacific Trails Resort<br>
             <a href="mailto:owner@pacifictrails.com">owner@pacifictrails.com</a>
+            <div id="lastMod">
+                <script>
+                    $( document ).ready(function() {
+                        $("#lastMod").html("This document was last modified on:" + document.lastModified);
+                    });
+                </script>
+            </div>
         </footer>
         </div>
     </body>
